@@ -283,8 +283,190 @@ public class Pattern {
         System.out.println();
 
         /*
-         * Print a diamond pattern.
-         * 
+         * Print a butterfly pattern.
+
+        *      *
+        **    **
+        ***  ***
+        ********
+        ********
+        ***  ***
+        **    **
+        *      *
+        
          */
+
+        for(int i = 1 ; i <= 4 ; i++){
+            for(int j = 1 ; j <= i ; j++){
+                System.out.print("*");
+            }
+            for(int k = 8-2*i ; k >= 1 ; k--){
+                System.out.print(" ");
+            }
+            for(int l = 1 ; l <= i ; l++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i = 4 ; i >=1 ; i--){
+            for(int j = 1 ;j <= i ; j++){
+                System.out.print("*");
+            } 
+            for(int k = 8-2*i ; k >= 1; k--){
+                System.out.print(" ");;
+            }
+            for(int l = i ; l >= 1 ; l--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        /*
+         * for extra line
+         */
+        System.out.println();
+
+        /*
+         * Print a RHOMBUS pattern.
+                *  *  *  *  * 
+               *  *  *  *  * 
+              *  *  *  *  * 
+             *  *  *  *  * 
+            *  *  *  *  * 
+         */
+        
+        for(int i = 1 ; i <= 5 ; i++){
+            for(int j = 5 ; j >= i ; j--){
+                System.out.print(" ");
+            }
+            for(int k = 1 ; k <= 5 ;k++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+
+
+        /*
+         * for extra line
+         */
+        System.out.println();
+        
+        /*
+         * Print a RHOMBUS pattern.
+                  * 
+               *  *  * 
+            *  *  *  *  * 
+         *  *  *  *  *  *  * 
+            *  *  *  *  *  *  * 
+               *  *  *  *  * 
+                  *  *  * 
+                     *                 
+         */
+
+
+         for(int i = 1 ; i <= 4 ; i++){
+            for(int j = 4 ; j >= i ; j--){
+                System.out.print("   ");
+            }
+            for(int k = 1 ; k <= 2*i-1 ; k++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+        for(int i = 4 ; i >= 1 ; i--){
+            for(int j = 5 ; j >= i ; j-- ){
+                System.out.print("   ");
+            }
+        for(int k = 1 ; k <= 2*i-1 ; k++ ){
+            System.out.print(" * ");
+        }
+        System.out.println();
+        }
+    
+
+        /*
+         * for extra line
+         */
+        System.out.println();
+        
+        /*
+         * Print a hollow butterfly pattern.
+         */
+
+        for(int i = 1 ; i <= 5 ; i++){
+            for(int j = 1 ; j <= 5 ; j++){
+                if(i == j || j == 1){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            for(int k = 5 - i  ; k >= 1 ; k--){
+                System.out.print(" ");
+            }
+            for(int l = 1 ; l <= i ; l++ ){
+                if(i == l || l == 1 ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+        System.out.println();
+        }
+        for(int i = 5 ; i >= 1 ; i--){
+            for(int j = 1 ; j <= i ; j++){
+                if( i == j || j == 1){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+                
+            }
+             for(int k = 8-2*(i-1) ; k >= 1; k-- ){
+                System.out.print(" ");
+            }
+            for(int l = i ; l >= 1 ; l--){
+                if( i == l || l == 1){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            
+            System.out.println();
+        }
+
+
+
+        /*
+         * for extra line
+         */
+        System.out.println();
+        
+        /*
+         * Print a hollow rhombus pattern.
+        
+         */
+
+        for(int i = 1 ; i <= 5 ; i++){
+            for(int j = 5 ; j >= i ; j--){
+                    System.out.print(" ");
+                }
+            for(int k = 5 ; k >= 1 ; k-- ){
+                if( k == 5 || k == 1 || i == 1 || i == 5){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+        System.out.println(); 
+        }
+
     }
 }
